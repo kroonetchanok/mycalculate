@@ -11,17 +11,23 @@ import UIKit
 class ViewController: UIViewController {
     
     
- // implicit
+ // implicit for integer
     
     var intNumber1 = 0
     var intNumber2: Int = 0
+    var intAnswer: Int = 0
+    
+    // implicit for String
     var strNumber1 = " "
     var strNumber2: String = ""
+    var strAnswer: String = ""
     
     
     
     
+    // implicit view in Outlet
     
+    @IBOutlet weak var answerlabel: UILabel!
     
     
     @IBOutlet weak var num1textfield: UITextField!
@@ -34,6 +40,9 @@ class ViewController: UIViewController {
 
     @IBAction func answerbuttom(_ sender: Any) {
         
+        
+        // initial view to Action
+        
         strNumber1 = num1textfield.text!
         strNumber2 = num2textfield.text!
         // show log
@@ -45,6 +54,10 @@ class ViewController: UIViewController {
         intNumber2 = Int(strNumber2)!
         print("intNumber1 ==> \(intNumber1)")
         print("intNumber2 ==> \(intNumber2)")
+        
+        // calculate
+        intAnswer = intNumber1 + intNumber2
+        print("intAnswer \(intAnswer)")
         
         
         
