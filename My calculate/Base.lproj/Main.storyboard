@@ -32,7 +32,7 @@
                                 <rect key="frame" x="136" y="155" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlB-DV-Jrx">
                                 <rect key="frame" x="228" y="193" width="65" height="60"/>
@@ -44,7 +44,7 @@
                                 <rect key="frame" x="136" y="261" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTl-bk-tKh">
                                 <rect key="frame" x="280" y="155" width="101" height="71"/>
@@ -53,6 +53,9 @@
                                 <state key="normal" title="Answer">
                                     <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerbuttom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K09-Oh-wz5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="????" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIm-wc-a9i">
                                 <rect key="frame" x="136" y="335" width="105" height="67"/>
@@ -79,6 +82,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="v0n-n3-b64" secondAttribute="trailing" constant="161" id="yRn-wG-mQt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="num1textfield" destination="v0n-n3-b64" id="C67-Eu-4Vg"/>
+                        <outlet property="num2textfield" destination="dhR-1z-dSf" id="o3r-UR-ngr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
